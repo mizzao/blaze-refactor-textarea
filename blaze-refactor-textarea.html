@@ -1,0 +1,11 @@
+<head>
+  <title>blaze-refactor-textarea</title>
+</head>
+
+<body>
+  {{#hello id="bar"}}I should appear in the textarea{{/hello}}
+</body>
+
+<template name="hello">
+  <textarea {{attributes}}>{{> UI.contentBlock}}</textarea>
+</template>
